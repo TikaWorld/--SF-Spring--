@@ -12,6 +12,7 @@ import org.springframework.core.type.filter.RegexPatternTypeFilter;
 import spittr.config.RootConfig.WebPackage;
 
 @Configuration
+@Import(DataConfig.class)
 @ComponentScan(basePackages={"spittr"},
     excludeFilters={
         @Filter(type=FilterType.CUSTOM, value=WebPackage.class)
