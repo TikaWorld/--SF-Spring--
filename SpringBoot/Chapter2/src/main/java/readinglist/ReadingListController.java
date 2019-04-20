@@ -17,6 +17,7 @@ public class ReadingListController {
 
     @Autowired
     public ReadingListController(ReadingListRepository readingListRepository) {
+        System.out.println(readingListRepository);
         this.readingListRepository=readingListRepository;
     }
 
